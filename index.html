@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AllUDesign</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/adaptive.css">
+    <link rel="shortcut icon" href="assets/img/icons/title.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <p>A<span>.</span></p>
+            </div>
+            <div class="nav-bar">
+                <nav>
+                    <ul class="nav__list">
+                        <li><a class="nav-link" href="#">Главная</a></li>
+                        <li><a class="nav-link" href="html/about.html">О нас</a></li>
+                        <li><a class="nav-link" href="html/services.html">Услуги</a></li>
+                        <li><a class="nav-link" href="#portfolio">Портфолио</a></li>
+                        <li><a class="nav-link" href="html/contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section__welcome">
+            <div class="container">
+                <div class="welcome-wrapper">
+                    <h1>РАЙСКИЙ УГОЛОК -<br>ВАШ ДОМ</h1>
+                    <button onclick="aboutPage();">Посмотреть проект</button>
+                </div>
+            </div>
+        </section>
+        <section class="section__about-us">
+            <div class="container">
+                <div class="about-us-wrapper">
+                    <div class="title-wrapper">
+                        <p class="section-title-uptext" id="about">- Кто мы?</p>
+                        <h2 class="section-title">О нас</h2>
+                    </div>
+                    <div class="information-about-wrapper">
+                        <div class="info-images-wrapper">
+                            <img src="assets/img/about-us.png" alt="teater">
+                        </div>
+                        <div class="info-text-wrapper">
+                            <h3>AllUDesign — <span>ОНЛАЙН-ИЗДАНИЕ ДЛЯ ВИЗУАЛОВ О ДИЗАЙНЕ, КРАСОТЕ, ИСКУССТВЕ, АРХИТЕКТУРЕ, ИНТЕРЬЕРАХ, МЕБЕЛИ, ДЕКОРЕ И ВАЖНЫХ ТЕНДЕНЦИЯХ В СОВРЕМЕННОЙ КУЛЬТУРЕ. МЫ ИЗБИРАТЕЛЬНО ОСВЕЩАЕМ СОБЫТИЯ И ФОРМИРУЕМ ХЭШТЕГИ ДЛЯ СВОИХ ЧИТАТЕЛЕЙ, ВЫБИРАЯ ИЗ ОГРОМНОГО ИНФОРМАЦИОННОГО ПОТОКА САМОЕ ВАЖНОЕ.</span></h3>
+                            <p><span>М</span>Ы СОВМЕЩАЕМ ВИЗИОНЕРСКИЕ ИСТОРИИ И ПРАКТИЧЕСКИЕ РЕКОМЕНДАЦИИ. ОТКРЫВАЕМ НОВЫЕ ИМЕНА И РЕШАЕМ ОБРАЗОВАТЕЛЬНЫЕ ЗАДАЧИ. МЫ ВЕРИМ, ЧТО МОДА МОЖЕТ БЫТЬ ИНТЕЛЛЕКТУАЛЬНОЙ, А БОГАТЫЙ ИНТЕРЬЕР — СОВРЕМЕННЫМ. МЫ ПОМОГАЕМ ПРОФЕССИОНАЛАМ И ЛЮБИТЕЛЯМ ОВЛАДЕТЬ ИСКУССТВОМ БЫТЬ СОВРЕМЕННЫМ.</p>
+                            <button onclick="profileStr();">Посмотреть наш профиль</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-works">
+            <div class="container">
+                <div class="works-wrapper">
+                    <div class="works-title-wrapper">
+                        <p class="section-title-uptext" id="portfolio">- Некоторые из наших работ</p>
+                        <h2 class="section-title">Наше Портфолио</h2>
+                    </div>
+                    <div class="corusel-wrapper">
+                        <img src="assets/img/portfolio4.jpg" alt="4" class="section-works__img first">
+                        <img src="assets/img/portfolio5.jpg" alt="5" class="section-works__img second">
+                        <img src="assets/img/portfolio6.jpg" alt="6" class="section-works__img third">
+                        <img src="assets/img/portfolio7.jpg" alt="7" class="section-works__img fourth">
+                        <div id="carouselExampleIndicators" class="carousel slide">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="assets/img/portfolio1.jpg" class="d-block w-100 section-work__image" alt="1">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="assets/img/portfolio2.jpg" class="d-block w-100 section-work__image" alt="2">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="assets/img/portfolio3.jpg" class="d-block w-100 section-work__image" alt="3">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-service">
+            <div class="container">
+                <div class="section-service-wrapper">
+                    <div class="section-servoce-title-wrapper">
+                        <p class="section-title-uptext">- Что бы делаем</p>
+                        <h2 class="section-title">Услуги</h2>
+                    </div>
+                    <div class="service-wrapper">
+                        <div class="service-item">
+                            <h3>Архитектурное портфолио</h3>
+                            <p>Мы готоывы помось Вам в проектировании дома, коттеджа, торгового или офисного помещения с учетом разных функций и бюджетов. Расскажите, каким Вы видите проет и мы бесплатно подготовим образ будущей постройки для общего понимания концепции.</p>
+                        </div>
+                        <div class="service-item">
+                            <h3>Процесс планирования</h3>
+                            <p>Разработка инфенерного проекта может быть произведена как отдельный вид услуг или в комплексе с разработкой дизайн-проекта и полной дальнейшей реализацией. Этот этап работ позволит сформировать точный бюджет, спланировать расход сатериалов и работ, а также оптимизировать дальнейшие затраты на содержание дома.</p>
+                        </div>
+                        <div class="service-item">
+                            <h3>Уникальный дизайн</h3>
+                            <p>Большинство из нас любит глазами, так влюбитесь в свой новый дом! Индивидуальный дизайн, основанный на предпочтениях заказчика и проработанный до мальейших нюансов - то, что заставит Вас возвращаться домой с удовольствием.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-testimonials">
+            <div class="container">
+                <div class="testimonials-wrapper">
+                    <div class="testimonials-image-wrapper">
+                        <img src="assets/img/testimonials.jpg" alt="testimonials">
+                    </div>
+                    <div class="testimonials-text-wrapper">
+                        <p class="section-title-uptext">- Что о нас говорят</p>
+                        <h2 class="section-title">Отзывы</h2>
+                        <p class="section-testimonials__text">Мне очень понравилась работа Светланы! Она учла все наши пожелания, разместила имеющуюся мебель по фотографиям в дизайн проекте, чутко реагировала на все наши желания, очень оперативно все получилось за что мы очень благодарны! Проект подучился наглядным со всеми необходимыми чертежами для коммуникаций, к ремонту подходим намного увереннее, чем в последний раз без проекта.</p>
+                        <p class="section-testimonials__text-autor">Светлана Филатова</p>
+                        <p class="section-testimonials__text-work">Генеральный директор</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-blog">
+            <div class="container">
+                <div class="blog-wrapper">
+                    <div class="blog-title">
+                        <p class="section-title-uptext">- Прочитайте наш блог</p>
+                        <h2 class="section-title">Последние Посты</h2>
+                    </div>
+                    <div class="blog-wrapper-text">
+                        <div class="blog-item">
+                            <img src="assets/img/blog1.jpg" alt="1">
+                            <p>Январь 5.23</p>
+                            <h3>Современные спальни, трендовый дизайн</h3>
+                        </div>
+                        <div class="blog-item">
+                            <img src="assets/img/blog2.jpg" alt="2">
+                            <p>Январь 2.23</p>
+                            <h3>Как сделать гостиную в стиле минимализма эффектной</h3>
+                        </div>
+                        <div class="blog-item">
+                            <img src="assets/img/blog3.jpg" alt="3">
+                            <p>Декабрь 36.22</p>
+                            <h3>Как сделать свой курорт выдающимся</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-wrapper-up">
+                <h3>Контактная Информация</h3>
+                <p><img src="assets/img/icons/adres.svg" alt="adres">  Абельмановская улица, 4с7, Москва, 109147</p>
+                <p><img src="assets/img/icons/phone.svg" alt="phone">  +7(495)923-96-08</p>
+                <p><img src="assets/img/icons/mail.svg" alt="mail"> <a href="#"> contact@templatesjungle.com
+                </a></p>
+            </div>
+            
+            <div class="footer-wrapper-down">
+                <p>© 2021 Шаблоны Джунгли. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="js/burger.js"></script>
+</body>
+</html>
